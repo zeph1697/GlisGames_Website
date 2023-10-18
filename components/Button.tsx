@@ -25,46 +25,36 @@ const Button = ({
   action,
 }: BtnType) => {
   return (
-    <button className="">
+    <button className="btnPolygon">
       <Link
         href={`${path ? path : ""}`}
-        className={`relative inline-flex items-center justify-center outline-transparent border-transparent ${
+        className={`relative inline-flex items-center justify-center rounded ${
           size ? (size === "SM" ? "px-4 py-2" : "px-8 py-4") : "px-6 py-3"
         } overflow-hidden transition-all ${
           mainBgColor ? mainBgColor : "bg-white"
-        } rounded group`}
+        }  group`}
       >
         <span
           className={`absolute top-0 left-0 w-0 h-0 transition-all duration-200 border-t-2 ${
-            hoverBorderColor ? "border-" + hoverBorderColor : "border-sky-800"
+            hoverBorderColor ? hoverBorderColor : "border-sky-800"
           } group-hover:w-full ease`}
         ></span>
         <span
           className={`absolute bottom-0 right-0 w-0 h-0 transition-all duration-200 border-b-2 ${
-            hoverBorderColor ? "border-" + hoverBorderColor : "border-sky-800"
+            hoverBorderColor ? hoverBorderColor : "border-sky-800"
           } group-hover:w-full ease`}
         ></span>
         <span
           className={`absolute top-0 left-0 w-full h-0 transition-all duration-300 delay-200 ${
-            hoverBgColor ? `bg-${hoverBgColor}` : "bg-sky-800"
+            hoverBgColor ? hoverBgColor : "bg-sky-800"
           } group-hover:h-full ease`}
         ></span>
         <span
           className={`absolute bottom-0 left-0 w-full h-0 transition-all duration-300 delay-200 ${
-            hoverBgColor ? `bg-${hoverBgColor}` : "bg-sky-800"
+            hoverBgColor ? hoverBgColor : "bg-sky-800"
           } group-hover:h-full ease`}
         ></span>
         <span className="absolute inset-0 w-full h-full duration-300 delay-300 bg-black opacity-0 group-hover:opacity-25"></span>
-        <span
-          className={`w-48 h-48 rounded rotate-[-50deg] ${
-            decorBgColor ? decorBgColor : "bg-subBgColor"
-          } absolute bottom-0 left-0  -mb-32 -ml-48`}
-        ></span>
-        <span
-          className={`w-48 h-48 rounded rotate-[-50deg] ${
-            decorBgColor ? decorBgColor : "bg-subBgColor"
-          } absolute top-0 right-0 -mt-32 -mr-48`}
-        ></span>
         <span
           className={`relative w-full text-center ${
             size

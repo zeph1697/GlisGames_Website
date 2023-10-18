@@ -4,9 +4,16 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="absolute flex flex-col px-8 py-6 w-full h-max bg-white">
-      <div>
-        <h2 className="text-3xl font-bold text-sky-800">GG</h2>
+    <footer className="absolute grid grid-cols-[40%_60%] px-8 py-6 w-full h-max bg-white">
+      <div className="flex flex-col items-start justify-between">
+        <h2 className="w-fit h-fit text-3xl font-bold text-sky-800 border-[1px] border-sky-800 rounded px-2 ">
+          GG
+        </h2>
+
+        <p className="text-sky-800 text-xs">
+          Copyright &copy; 2023{" "}
+          <span className="font-semibold">Glis Games</span>
+        </p>
       </div>
 
       <ul>
@@ -22,10 +29,6 @@ const Footer = () => {
           </Link>
         ))}
       </ul>
-
-      <p className="text-sky-800 text-xs">
-        Copyright &copy; 2023 <span className="font-semibold">Glis Games</span>
-      </p>
     </footer>
   );
 };

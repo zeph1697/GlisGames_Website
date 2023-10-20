@@ -6,7 +6,7 @@ import { FaUserCircle } from "react-icons/fa";
 export const NavLinks = [
   { name: "Home", path: "/" },
   { name: "Services", path: "/service" },
-  { name: "Works", path: "/product" },
+  { name: "Games", path: "/product" },
   { name: "Team", path: "/team" },
 ];
 

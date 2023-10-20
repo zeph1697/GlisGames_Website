@@ -1,28 +1,56 @@
 import React from "react";
 
 type DecorType = {
+  direction: "TOP" | "RIGHT" | "BOTTOM" | "LEFT";
   color?: string;
-  direction?: "TOP" | "RIGHT" | "BOTTOM" | "LEFT";
-  length?: any;
+  ringBordColor?: string;
+  ringSize?: string;
+  isAnimate?: boolean;
 };
 
-const Decor = ({ color, direction, length }: DecorType) => {
+const Decor = ({
+  color,
+  ringBordColor,
+  direction,
+  ringSize,
+  isAnimate,
+}: DecorType) => {
   return (
     <div className="relative flex items-center">
       <span
-        className={`absolute ${
-          length ? `w-[${length}%]` : "w-[25%]"
-        } h-0.5 bg-white `}
-      ></span>
-      <span
-        className={`absolute w-2 h-2 bg-white rounded-full ${
-          length ? `left-[${length}%]` : "left-[25%]"
+        className={`absolute rounded-full border-[1px] ${
+          ringSize ? ringSize : "w-16 h-16"
+        } ${isAnimate ? "animate-water-drop" : ""} ${
+          ringBordColor ? ringBordColor : "border-white"
+        } opacity-75 ${
+          direction === "LEFT"
+            ? "left-full"
+            : direction === "TOP"
+            ? "top-0 -translate-y-1/2"
+            : direction === "RIGHT"
+            ? "left-0 -translate-x-1/2"
+            : "top-full -translate-y-1/2"
         } -translate-x-1/2`}
       ></span>
       <span
-        className={`absolute w-16 h-16 rounded-full border-[1px] border-white opacity-75 ${
-          length ? `left-[${length}%]` : "left-[25%]"
-        } -translate-x-1/2 `}
+        className={`absolute ${
+          direction === "LEFT" || direction === "RIGHT"
+            ? "w-full h-0.5"
+            : "h-full w-0.5 -translate-x-1/2"
+        } ${color ? color : "bg-white"} `}
+      ></span>
+      <span
+        className={`absolute w-2 h-2 ${
+          color ? color : "bg-white"
+        } rounded-full ${
+          direction === "LEFT"
+            ? "left-full "
+            : direction === "TOP"
+            ? "top-0 -translate-y-1/2"
+            : direction === "RIGHT"
+            ? "left-0 "
+            : "top-full -translate-y-1/2"
+        } -translate-x-1/2`}
       ></span>
     </div>
   );

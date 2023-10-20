@@ -8,7 +8,7 @@ type BtnType = {
   titleColor?: string;
   hoverBgColor?: string;
   hoverBorderColor?: string;
-  decorBgColor?: string;
+  highlightColor?: string;
   size?: "SM" | "LG";
   action?: void;
 };
@@ -20,7 +20,7 @@ const Button = ({
   titleColor,
   hoverBgColor,
   hoverBorderColor,
-  decorBgColor,
+  highlightColor,
   size,
   action,
 }: BtnType) => {
@@ -54,17 +54,21 @@ const Button = ({
             hoverBgColor ? hoverBgColor : "bg-sky-800"
           } group-hover:h-full ease`}
         ></span>
-        <span className="absolute inset-0 w-full h-full duration-300 delay-300 bg-black opacity-0 group-hover:opacity-25"></span>
+        <span
+          className={`absolute inset-0 w-full h-full duration-300 delay-300 ${
+            highlightColor ? highlightColor : ""
+          } opacity-0 group-hover:opacity-25`}
+        ></span>
         <span
           className={`relative w-full text-center ${
             size
               ? size === "SM"
                 ? "text-sm font-semibold"
-                : "text-lg font-bold"
+                : "text-xl font-bold"
               : "font-semibold"
           } ${
-            titleColor ? titleColor : "text-sky-800"
-          } transition-colors duration-300 ease-in-out group-hover:text-white`}
+            titleColor ? titleColor : "text-sky-800 group-hover:text-white"
+          } transition-colors duration-300 ease-in-out`}
         >
           {title}
         </span>

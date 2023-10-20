@@ -2,19 +2,26 @@
 
 import { NavLinks } from "@/constant";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Button from "./Button";
+import { usePathname } from "next/navigation";
 
 const NavBar = () => {
   const [scrollTop, setScrollTop] = useState(true);
+  const pathName = usePathname();
 
-  window.addEventListener("scroll", () => {
-    window.scrollY >= 80 ? setScrollTop(false) : setScrollTop(true);
-  });
+  useEffect(() => {
+    return () => {
+      window.addEventListener("scroll", () => {
+        window.scrollY >= 80 ? setScrollTop(false) : setScrollTop(true);
+      });
+    };
+  }, []);
+
   return (
     <nav
       className={`fixed flex justify-between items-center px-8 w-full z-40 transition-all ease-out ${
-        scrollTop ? "bg-transparent h-24" : "bg-subBgColor h-16 drop-shadow"
+        scrollTop ? "bg-transparent h-24" : "bg-subBgColor h-16"
       }`}
     >
       <div className="flex items-center gap-10">
@@ -29,15 +36,32 @@ const NavBar = () => {
             <Link
               key={link.name}
               href={link.path}
-              className="w-full h-full px-4 py-1 rounded-full border-transparent border-[1px] hover:border-white"
+              className={`relative w-full h-full px-4 py-1 rounded-full border-transparent ${
+                link.path === pathName
+                  ? "cursor-default text-subBgColor"
+                  : "text-white hover:text-amber-400"
+              } group`}
             >
-              <li className="">{link.name}</li>
+              <span
+                className={`absolute labelPolygon w-full h-full rounded top-0 left-0 bg-white -z-10 ${
+                  link.path === pathName ? "block" : "hidden"
+                }`}
+              ></span>
+              <span className="absolute labelPolygonDecor w-full h-full top-0 left-0 bg-amber-400 hidden group-hover:block"></span>
+              <li className="font-medium">{link.name.toUpperCase()}</li>
             </Link>
           ))}
         </ul>
       </div>
 
-      <Button title="Contact" path="/contact" size="SM" />
+      <Button
+        title="Contact"
+        path="/contact"
+        size="SM"
+        hoverBorderColor="border-amber-400"
+        hoverBgColor="bg-amber-400"
+        titleColor="text-subBgColor"
+      />
     </nav>
   );
 };

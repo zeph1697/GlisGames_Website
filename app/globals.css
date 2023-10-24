@@ -59,14 +59,221 @@ body {
 
 /* LABEL CLIPPING MASK */
 .labelPolygon {
-  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 85% 100%, 0% 100%);
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% calc(100% - 8px),
+    calc(100% - 8px) 100%,
+    0% 100%
+  );
 }
 
 .labelPolygonDecor {
-  clip-path: polygon(100% 75%, 100% 100%, 85% 100%);
+  clip-path: polygon(100% calc(100% - 8px), 100% 100%, calc(100% - 8px) 100%);
+}
+
+/* TAGS CLIPPING MASK */
+.tagPolygon {
+  clip-path: polygon(
+    3rem 0%,
+    100% 0%,
+    100% calc(100% - 1rem),
+    calc(100% - 3rem) 100%,
+    0% 100%,
+    0% 1rem
+  );
 }
 
 /* PICTURE CLIPPING MASK */
 .imgPolygon {
-  clip-path: polygon(15% 0%, 100% 0%, 100% 75%, 85% 100%, 0% 100%, 0% 25%);
+  clip-path: polygon(
+    2rem 0%,
+    100% 0%,
+    100% calc(100% - 2rem),
+    calc(100% - 2rem) 100%,
+    0% 100%,
+    0% 2rem
+  );
+}
+
+.imgPolygonDecor {
+  clip-path: polygon(
+    100% calc(100% - 2.05rem),
+    100% calc(100% - 1.95rem),
+    calc(100% - 1.95rem) 100%,
+    calc(100% - 2.05rem) 100%
+  );
+}
+
+/* ------------------------------------------- */
+
+/* HERO TITLE ANIMATED */
+h1.glitch {
+  position: relative;
+}
+
+h1.glitch::before,
+h1.glitch::after {
+  color: rgb(251 191 36);
+  content: attr(content);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: black;
+  overflow: hidden;
+  top: 0;
+}
+
+h1.glitch::before {
+  left: 3px;
+  text-shadow: -2px 0 yellow;
+  animation-name: glitch-animation-1;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: reverse-alternate;
+}
+
+h1.glitch::after {
+  left: -3px;
+  text-shadow: -2px 0 blue;
+  animation-name: glitch-animation-2;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: reverse-alternate;
+}
+
+@keyframes glitch-animation-1 {
+  0% {
+    clip: rect(144px, 1200px, 135px, 16px);
+  }
+  5% {
+    clip: rect(139px, 1200px, 61px, 16px);
+  }
+  10% {
+    clip: rect(86px, 1200px, 47px, 16px);
+  }
+  15% {
+    clip: rect(136px, 1200px, 140px, 16px);
+  }
+  20% {
+    clip: rect(48px, 1200px, 74px, 16px);
+  }
+  25% {
+    clip: rect(101px, 1200px, 120px, 16px);
+  }
+  30% {
+    clip: rect(8px, 1200px, 104px, 16px);
+  }
+  35% {
+    clip: rect(107px, 1200px, 87px, 16px);
+  }
+  40% {
+    clip: rect(139px, 1200px, 10px, 16px);
+  }
+  45% {
+    clip: rect(76px, 1200px, 54px, 16px);
+  }
+  50% {
+    clip: rect(114px, 1200px, 1px, 16px);
+  }
+  55% {
+    clip: rect(136px, 1200px, 98px, 16px);
+  }
+  60% {
+    clip: rect(78px, 1200px, 11px, 16px);
+  }
+  65% {
+    clip: rect(21px, 1200px, 147px, 16px);
+  }
+  70% {
+    clip: rect(25px, 1200px, 75px, 16px);
+  }
+  75% {
+    clip: rect(96px, 1200px, 104px, 16px);
+  }
+  80% {
+    clip: rect(42px, 1200px, 88px, 16px);
+  }
+  85% {
+    clip: rect(12px, 1200px, 123px, 16px);
+  }
+  90% {
+    clip: rect(21px, 1200px, 42px, 16px);
+  }
+  95% {
+    clip: rect(123px, 1200px, 115px, 16px);
+  }
+  100% {
+    clip: rect(14px, 1200px, 105px, 16px);
+  }
+}
+
+@keyframes glitch-animation-2 {
+  0% {
+    clip: rect(132px, 1200px, 86px, 16px);
+  }
+  5% {
+    clip: rect(99px, 1200px, 83px, 16px);
+  }
+  10% {
+    clip: rect(79px, 1200px, 72px, 16px);
+  }
+  15% {
+    clip: rect(1px, 1200px, 131px, 16px);
+  }
+  20% {
+    clip: rect(58px, 1200px, 150px, 16px);
+  }
+  25% {
+    clip: rect(145px, 1200px, 117px, 16px);
+  }
+  30% {
+    clip: rect(29px, 1200px, 65px, 16px);
+  }
+  35% {
+    clip: rect(110px, 1200px, 44px, 16px);
+  }
+  40% {
+    clip: rect(137px, 1200px, 58px, 16px);
+  }
+  45% {
+    clip: rect(90px, 1200px, 27px, 16px);
+  }
+  50% {
+    clip: rect(85px, 1200px, 6px, 16px);
+  }
+  55% {
+    clip: rect(47px, 1200px, 78px, 16px);
+  }
+  60% {
+    clip: rect(36px, 1200px, 147px, 16px);
+  }
+  65% {
+    clip: rect(133px, 1200px, 62px, 16px);
+  }
+  70% {
+    clip: rect(82px, 1200px, 78px, 16px);
+  }
+  75% {
+    clip: rect(51px, 1200px, 104px, 16px);
+  }
+  80% {
+    clip: rect(69px, 1200px, 123px, 16px);
+  }
+  85% {
+    clip: rect(34px, 1200px, 99px, 16px);
+  }
+  90% {
+    clip: rect(77px, 1200px, 37px, 16px);
+  }
+  95% {
+    clip: rect(72px, 1200px, 33px, 16px);
+  }
+  100% {
+    clip: rect(9px, 1200px, 136px, 16px);
+  }
 }

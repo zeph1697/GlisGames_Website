@@ -1,6 +1,6 @@
 "use client";
 
-import { NavLinks } from "@/constant";
+import { NavLinks } from "@/constant/general-config";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import Button from "./Button";

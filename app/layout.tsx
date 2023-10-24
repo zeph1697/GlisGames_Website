@@ -21,6 +21,7 @@ export default function RootLayout({
       <body
         className={`${inter.className} relative w-screen h-full m-0 p-0 overflow-x-hidden overflow-y-auto`}
       >
+        <span className="fixed w-full h-full bg-gradient-to-tl from-sky-950 via-gray-900 to-black -z-50"></span>
         <NavBar />
         {children}
         <Footer />

@@ -31,7 +31,7 @@ const Footer = () => {
       <motion.ul
         variants={fadeIn("down", 0.4)}
         initial="hidden"
-        animate="show"
+        whileInView="show"
         exit="hidden"
         className="flex w-full justify-between"
       >
@@ -48,7 +48,7 @@ const Footer = () => {
       <motion.ul
         variants={fadeIn("down", 0.6)}
         initial="hidden"
-        animate="show"
+        whileInView="show"
         exit="hidden"
         className="flex w-2/3 justify-between"
       >

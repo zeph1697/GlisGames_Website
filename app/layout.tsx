@@ -33,6 +33,8 @@ export default function RootLayout({
                 ? "bg-gradient-to-tr"
                 : path === "/product"
                 ? "bg-gradient-to-br"
+                : path === "/contact"
+                ? "bg-gradient-to-b"
                 : "bg-gradient-to-bl"
             } from-sky-950 via-gray-900 to-black -z-50`}
           />

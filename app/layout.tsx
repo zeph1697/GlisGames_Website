@@ -23,7 +23,7 @@ export default function RootLayout({
         className={`${inter.className} relative w-screen h-full text-white m-0 p-0 overflow-x-hidden overflow-y-auto`}
       >
         <NavBar />
-        <AnimatePresence mode="wait" key="modal">
+        <AnimatePresence mode="wait" key={path}>
           <PageSwap />
           <span
             className={`fixed w-full h-full ${

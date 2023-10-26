@@ -114,7 +114,7 @@ h1.glitch {
 
 h1.glitch::before,
 h1.glitch::after {
-  color: rgb(251 191 36);
+  color: #fbbf24;
   content: attr(content);
   position: absolute;
   width: 100%;

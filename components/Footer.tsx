@@ -1,12 +1,22 @@
 "use client";
 
-import { FooterCTALinks, FooterTerms } from "@/constant/general-config";
+import { CTALinks, FooterTerms } from "@/constant/general-config";
 import Link from "next/link";
 import React from "react";
 
+import { motion } from "framer-motion";
+import { fadeIn } from "@/motionConfig";
+
 const Footer = () => {
   return (
-    <footer className="mx-auto mt-12 flex flex-col justify-center items-center px-8 py-6 w-1/2 gap-5 border-t-[1px] border-cyan-400">
+    <motion.footer
+      variants={fadeIn("down", 0.2)}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true }}
+      exit="hidden"
+      className="mx-auto mt-12 flex flex-col justify-center items-center px-8 py-6 w-1/2 gap-5 border-t-[1px] border-cyan-400"
+    >
       <Link
         href=""
         scroll={false}
@@ -18,7 +28,13 @@ const Footer = () => {
         GG
       </Link>
 
-      <ul className="flex w-full justify-between">
+      <motion.ul
+        variants={fadeIn("down", 0.4)}
+        initial="hidden"
+        animate="show"
+        exit="hidden"
+        className="flex w-full justify-between"
+      >
         {FooterTerms.map((term) => (
           <li
             key={term.title}
@@ -27,26 +43,34 @@ const Footer = () => {
             {term.title}
           </li>
         ))}
-      </ul>
+      </motion.ul>
 
-      <ul className="flex w-2/3 justify-between">
-        {FooterCTALinks.map((link) => (
-          <Link
+      <motion.ul
+        variants={fadeIn("down", 0.6)}
+        initial="hidden"
+        animate="show"
+        exit="hidden"
+        className="flex w-2/3 justify-between"
+      >
+        {CTALinks.map((link) => (
+          <a
             key={link.name}
             href={link.url}
             target="_blank"
             className="flex items-center gap-2 text-cyan-400 hover:text-white"
           >
-            <link.icon className="" />
-            <li className="font-extralight">{link.name}</li>
-          </Link>
+            <li className="flex items-center font-extralight group transition-all ease-out">
+              <link.icon className="" />
+              <p className="ml-2 text-sm">{link.name}</p>
+            </li>
+          </a>
         ))}
-      </ul>
+      </motion.ul>
 
       <p className="text-sky-800 text-xs mt-2">
         Copyright &copy; 2023 <span className="font-semibold">Glis Games</span>
       </p>
-    </footer>
+    </motion.footer>
   );
 };
 

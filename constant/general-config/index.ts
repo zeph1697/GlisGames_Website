@@ -1,6 +1,12 @@
-import { SiLinkedin } from "react-icons/si";
+import { SiLinkedin, SiMaildotru } from "react-icons/si";
 import { SiSkype } from "react-icons/si";
-import { TbMailFilled } from "react-icons/tb";
+import {
+  TbMailFilled,
+  TbUserCode,
+  TbUserDollar,
+  TbUserEdit,
+  TbUserSearch,
+} from "react-icons/tb";
 import { FaUserCircle } from "react-icons/fa";
 
 // NAV-BAR
@@ -19,33 +25,55 @@ export const FooterTerms = [
   { title: "Cookie Preferences" },
 ];
 
-export const FooterCTALinks = [
+export const CTALinks = [
   {
     name: "LinkedIn",
     url: "https://www.linkedin.com/company/glis-games/",
     icon: SiLinkedin,
   },
-  { name: "Email", url: "", icon: TbMailFilled },
-  { name: "Skype", url: "", icon: SiSkype },
-  { name: "Work with us!", url: "", icon: FaUserCircle },
+  { name: "Email", url: "mailto:mich@glisgames.com", icon: SiMaildotru },
+  { name: "Skype", url: "skype:live:michnaz?chat", icon: SiSkype },
+  {
+    name: "Work with us!",
+    url: "mailto:recruit@glisgames.com",
+    icon: FaUserCircle,
+  },
 ];
 
 // HERO
 export const ServiceCarousels = [
   {
+    index: 0,
     title: "GAME PUBLISHING",
     content: "DON'T BE EATEN BY PUBLISHERS, PROTECT YOUR GAME",
     imgUrl: "/img-web-01.jpg",
   },
   {
+    index: 1,
     title: "GROWTH HACKING",
     content: "TOUGH TIMES CALL FOR SMART ACTIONS",
     imgUrl: "/img-web-02.jpg",
   },
   {
+    index: 2,
     title: "GAMING ADVISORY",
     content: "FROM GREAT SOLUTIONS COME GREAT OPPORTUNITIES",
     imgUrl: "/img-web-03.jpg",
+  },
+];
+
+export const Timeline = [
+  {
+    date: "2021",
+    detail: "",
+  },
+  {
+    date: "2021 - 2022",
+    detail: "",
+  },
+  {
+    date: "2022 - NOW",
+    detail: "",
   },
 ];
 
@@ -75,5 +103,63 @@ export const ServiceTags = [
     content:
       "No one have Big Tech's money, but the good news is that we can exploit it to reduce your costs from development to user acquisition, rocket launch your games on a human-affordable budget.",
     icon: "",
+  },
+];
+
+// TEAM
+export const TeamConfig = [
+  {
+    id: "FOUNDER - CPO",
+    guys: [
+      { name: "Michele Tampellini", position: "", url: "", icon: TbUserDollar },
+    ],
+  },
+  {
+    id: "PRODUCT OWNER",
+    guys: [{ name: "Cloe Nguyen", position: "", url: "", icon: TbUserSearch }],
+  },
+  {
+    id: "DEVELOPER",
+    guys: [
+      { name: "Haozhong Zheng", position: "", url: "", icon: TbUserCode },
+      { name: "Hai Luong", position: "", url: "", icon: TbUserCode },
+      { name: "Chung Pham", position: "", url: "", icon: TbUserCode },
+      { name: "Viet Pham", position: "", url: "", icon: TbUserCode },
+      { name: "Tung Tran", position: "", url: "", icon: TbUserCode },
+      { name: "Viet Anh Ng.", position: "", url: "", icon: TbUserCode },
+    ],
+  },
+  {
+    id: "GRAPHIC DESIGNER",
+    guys: [{ name: "Mai Trieu", position: "", url: "", icon: TbUserEdit }],
+  },
+];
+
+// CONTACT
+export const ContactConfig = [
+  {
+    title: "General Inquiries",
+    subtitle: "Ask us anything.",
+    path: "mich@glisgames.com",
+    url: "mailto:mich@glisgames.com",
+  },
+  {
+    title: "Partnerships",
+    subtitle: "Need engineering help?",
+    path: "mich@glisgames.com",
+    url: "mailto:mich@glisgames.com",
+  },
+  {
+    title: "Career",
+    subtitle: "Growth with us!",
+    path: "recruit@glisgames.com",
+    url: "mailto:recruit@glisgames.com",
+  },
+  {
+    title: "Our Office",
+    subtitle:
+      "3rd Floor, Toong Workspace, Indochina Plaza Hanoi, Cau Giay, Hanoi.",
+    path: "",
+    url: "",
   },
 ];

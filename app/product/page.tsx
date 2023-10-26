@@ -7,7 +7,7 @@ import React from "react";
 const Product = () => {
   return (
     <section className="relative flex w-full h-full min-h-screen flex-col items-center">
-      <span className="absolute w-full h-full bg-[conic-gradient(at_left,_var(--tw-gradient-stops))] from-sky-500 to-blue-800 -z-50"></span>
+      {/* <span className="fixed w-full h-full bg-[conic-gradient(at_left,_var(--tw-gradient-stops))] from-sky-950 via-gray-900 to-black -z-50"></span> */}
 
       <CompLayout
         mainTitle="Our Games"
@@ -20,9 +20,10 @@ const Product = () => {
                 <ImgComp imgUrl="/imgLogo.png" />
 
                 <div className="flex flex-col justify-between w-1/2 ml-5">
-                  <h3 className="font-bebas tracking-wider text-2xl text-white group-hover:text-amber-400 cursor-default">
+                  <h3 className="font-bebas tracking-wider text-2xl text-cyan-400 group-hover:text-amber-400 cursor-default">
                     {game.name}
                   </h3>
+
                   <p className="text-sm text-white/80">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Sint corporis ipsum accusantium explicabo. Quia, omnis!

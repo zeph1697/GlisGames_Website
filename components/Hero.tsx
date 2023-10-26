@@ -6,6 +6,9 @@ import Image from "next/image";
 import Decor from "./Decor";
 import { ServiceCarousels } from "@/constant/general-config";
 
+import { motion } from "framer-motion";
+import { fadeIn } from "@/motionConfig";
+
 const Hero = () => {
   const [mainBtnHover, setMainBtnHover] = useState(false);
 
@@ -32,29 +35,49 @@ const Hero = () => {
       <div className="flex flex-col w-full h-full mt-32 px-8 py-6">
         {/* HERO TITLE */}
         <div className="flex flex-col items-center self-center">
-          <h1
+          <motion.h1
             id="h1"
+            variants={fadeIn("down", 0.2)}
+            initial="hidden"
+            animate="show"
+            exit="hidden"
             className={`${
               mainBtnHover ? "glitch text-amber-400" : ""
             } text-7xl font-bold my-6 cursor-default`}
             content="LET'S DISCOVER"
           >
             {mainBtnHover ? "LET'S DISCOVER" : "HERE'S THE BIG TITLE"}
-          </h1>
+          </motion.h1>
 
-          <p className="text-cyan-400 text-sm font-light">
+          <motion.p
+            variants={fadeIn("down", 0.3)}
+            initial="hidden"
+            animate="show"
+            exit="hidden"
+            className="text-cyan-400 text-sm font-light"
+          >
             Some joeking arounds in here
-          </p>
+          </motion.p>
 
-          <div className="flex h-20 mt-4">
+          <motion.div
+            variants={fadeIn("down", 0.4)}
+            initial="hidden"
+            animate="show"
+            exit="hidden"
+            className="flex h-20 mt-4"
+          >
             <Decor
               direction="BOTTOM"
               ringBordColor="border-amber-400"
               isAnimate={true}
             />
-          </div>
+          </motion.div>
 
-          <div
+          <motion.div
+            variants={fadeIn("up", 0.3)}
+            initial="hidden"
+            animate="show"
+            exit="hidden"
             className="mt-12"
             onMouseEnter={() => {
               setMainBtnHover(true);
@@ -70,14 +93,18 @@ const Hero = () => {
               mainBgColor="bg-amber-400"
               highlightColor="bg-black"
             />
-          </div>
+          </motion.div>
         </div>
       </div>
 
       <div className="grid grid-cols-3 my-auto gap-8">
         {ServiceCarousels.map((object) => (
-          <div
-            key={object.title}
+          <motion.div
+            variants={fadeIn("up", 0.8 + 0.3 * object.index)}
+            initial="hidden"
+            animate="show"
+            exit="hidden"
+            key={object.index}
             className="relative grid w-[480px] h-40 group"
           >
             <div className="flex justify-between">
@@ -109,7 +136,7 @@ const Hero = () => {
                 {object.content}
               </p>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </header>

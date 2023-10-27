@@ -14,7 +14,7 @@ const ChildOfProduct = () => {
       {GameList.map((game) => (
         <motion.li
           key={game.id}
-          variants={fadeIn("left", 0.2 * game.id)}
+          variants={fadeIn("left", 0.1 * game.id)}
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}

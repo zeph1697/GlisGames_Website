@@ -1,7 +1,13 @@
 import ChildOfTeam from "@/components/ChildOfTeam";
 import CompLayout from "@/components/CompLayout";
 import { TeamConfig } from "@/constant/general-config";
+import { Metadata } from "next";
 import React from "react";
+
+export const metadata: Metadata = {
+  title: "Human Resource -  Glis Games",
+  description: "Glis Games Company Website",
+};
 
 const Team = () => {
   return (

@@ -2,7 +2,7 @@ export const GameList = [
   {
     id: 0,
     name: "Imperium",
-    gameUrl: "",
+    gameUrl: "https://www.glisgames.com/SISAL/Imperium/latest/",
     description: "",
     imgUrl: "",
     tags: [],
@@ -10,7 +10,7 @@ export const GameList = [
   {
     id: 1,
     name: "Power Bell",
-    gameUrl: "",
+    gameUrl: "https://www.glisgames.com/SISAL/Powerbell/latest/",
     description: "",
     imgUrl: "",
     tags: [],
@@ -26,7 +26,7 @@ export const GameList = [
   {
     id: 3,
     name: "Joe Joker Pirate Riches",
-    gameUrl: "",
+    gameUrl: "https://www.glisgames.com/SISAL/JJPirateRiches/latest/",
     description: "",
     imgUrl: "",
     tags: [],
@@ -34,7 +34,7 @@ export const GameList = [
   {
     id: 4,
     name: "Lucky Lobster",
-    gameUrl: "",
+    gameUrl: "https://www.glisgames.com/SISAL/LuckyLobster/dist/",
     description: "",
     imgUrl: "",
     tags: [],
@@ -42,7 +42,7 @@ export const GameList = [
   {
     id: 5,
     name: "Buffalo Gold Rush",
-    gameUrl: "",
+    gameUrl: "https://www.glisgames.com/SISAL/BuffaloGoldRush/dist/",
     description: "",
     imgUrl: "",
     tags: [],
@@ -50,7 +50,7 @@ export const GameList = [
   {
     id: 6,
     name: "Lucky Dynasty",
-    gameUrl: "",
+    gameUrl: "https://www.glisgames.com/SISAL/LuckyDynasty/dist/",
     description: "",
     imgUrl: "",
     tags: [],
@@ -58,7 +58,7 @@ export const GameList = [
   {
     id: 7,
     name: "Stargems",
-    gameUrl: "",
+    gameUrl: "https://www.glisgames.com/SISAL/Stargems/latest/",
     description: "",
     imgUrl: "",
     tags: [],
@@ -66,7 +66,7 @@ export const GameList = [
   {
     id: 8,
     name: "Joe Joker Neon Blast",
-    gameUrl: "",
+    gameUrl: "https://www.glisgames.com/SISAL/NeonJokerBlast/latest/",
     description: "",
     imgUrl: "",
     tags: [],
@@ -74,7 +74,7 @@ export const GameList = [
   {
     id: 9,
     name: "Gate of Cheope",
-    gameUrl: "",
+    gameUrl: "https://www.glisgames.com/SISAL/GOC/STANDALONE/",
     description: "",
     imgUrl: "",
     tags: [],

@@ -1,7 +1,13 @@
 import ChildOfContact from "@/components/ChildOfContact";
 import CompLayout from "@/components/CompLayout";
 import { ContactConfig } from "@/constant/general-config";
+import { Metadata } from "next";
 import React from "react";
+
+export const metadata: Metadata = {
+  title: "Contact - Glis Games",
+  description: "Glis Games Company Website",
+};
 
 const Contact = () => {
   return (

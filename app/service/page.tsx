@@ -1,8 +1,14 @@
 import ChildOfService from "@/components/ChildOfService";
 import CompLayout from "@/components/CompLayout";
 import { ServiceTags } from "@/constant/general-config";
+import { Metadata } from "next";
 import Image from "next/image";
 import React from "react";
+
+export const metadata: Metadata = {
+  title: "Services - Glis Games",
+  description: "Glis Games Company Website",
+};
 
 const Service = () => {
   return (

@@ -3,7 +3,13 @@ import ChildOfProduct from "@/components/ChildOfProduct";
 import CompLayout from "@/components/CompLayout";
 import ImgComp from "@/components/ImgComp";
 import { GameList } from "@/constant/game-list-config";
+import { Metadata } from "next";
 import React from "react";
+
+export const metadata: Metadata = {
+  title: "Explore Games - Glis Games",
+  description: "Glis Games Company Website",
+};
 
 const Product = () => {
   return (

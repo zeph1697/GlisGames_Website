@@ -4,7 +4,7 @@ import { ContactConfig } from "@/constant/general-config";
 import React from "react";
 
 import { motion } from "framer-motion";
-import { fadeIn } from "@/motionConfig";
+import { fadeIn } from "@/constant/motionConfig";
 
 const ChildOfContact = () => {
   return (

@@ -5,7 +5,7 @@ import Image from "next/image";
 import React from "react";
 
 import { motion } from "framer-motion";
-import { fadeIn } from "@/motionConfig";
+import { fadeIn } from "@/constant/motionConfig";
 
 const ChildOfService = () => {
   return (

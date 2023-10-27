@@ -5,7 +5,7 @@ import Link from "next/link";
 import React from "react";
 
 import { motion } from "framer-motion";
-import { fadeIn } from "@/motionConfig";
+import { fadeIn } from "@/constant/motionConfig";
 
 const Footer = () => {
   return (

@@ -5,7 +5,7 @@ import React from "react";
 import Decor from "./Decor";
 
 import { motion } from "framer-motion";
-import { fadeIn } from "@/motionConfig";
+import { fadeIn } from "@/constant/motionConfig";
 
 type TypeCustomComp = {
   mainTitle: string;

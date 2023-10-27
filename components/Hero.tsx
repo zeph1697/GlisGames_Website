@@ -7,7 +7,7 @@ import Decor from "./Decor";
 import { ServiceCarousels } from "@/constant/general-config";
 
 import { motion } from "framer-motion";
-import { fadeIn } from "@/motionConfig";
+import { fadeIn } from "@/constant/motionConfig";
 
 const Hero = () => {
   const [mainBtnHover, setMainBtnHover] = useState(false);

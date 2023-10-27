@@ -10,12 +10,12 @@ const NavBar = () => {
   const [scrollTop, setScrollTop] = useState(true);
   const pathName = usePathname();
 
-  document.addEventListener("scroll", () => {
-    window.scrollY >= 80 ? setScrollTop(false) : setScrollTop(true);
-  });
-
   useEffect(() => {
-    return () => {};
+    return () => {
+      document.addEventListener("scroll", () => {
+        window.scrollY >= 80 ? setScrollTop(false) : setScrollTop(true);
+      });
+    };
   }, []);
 
   return (

@@ -5,7 +5,7 @@ import { Metadata } from "next";
 import React from "react";
 
 export const metadata: Metadata = {
-  title: "Human Resource -  Glis Games",
+  title: "Team Members -  Glis Games",
   description: "Glis Games Company Website",
 };
 

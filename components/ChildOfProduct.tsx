@@ -6,7 +6,7 @@ import Button from "./Button";
 
 import { motion } from "framer-motion";
 import ImgComp from "./ImgComp";
-import { fadeIn } from "@/constant/motionConfig";
+import { fadeIn } from "@/constant/motion-config";
 
 const ChildOfProduct = () => {
   return (

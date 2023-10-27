@@ -12,7 +12,7 @@ const NavBar = () => {
 
   useEffect(() => {
     return () => {
-      window.addEventListener("scroll", () => {
+      document.addEventListener("scroll", () => {
         window.scrollY >= 80 ? setScrollTop(false) : setScrollTop(true);
       });
     };

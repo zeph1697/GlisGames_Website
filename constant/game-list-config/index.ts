@@ -1,5 +1,6 @@
 export const GameList = [
   {
+    id: 0,
     name: "Imperium",
     gameUrl: "",
     description: "",
@@ -7,6 +8,7 @@ export const GameList = [
     tags: [],
   },
   {
+    id: 1,
     name: "Power Bell",
     gameUrl: "",
     description: "",
@@ -14,6 +16,7 @@ export const GameList = [
     tags: [],
   },
   {
+    id: 2,
     name: "NasdaX",
     gameUrl: "https://www.glisgames.com/SISAL/NasdaX/dist/",
     description: "",
@@ -21,6 +24,7 @@ export const GameList = [
     tags: [],
   },
   {
+    id: 3,
     name: "Joe Joker Pirate Riches",
     gameUrl: "",
     description: "",
@@ -28,6 +32,7 @@ export const GameList = [
     tags: [],
   },
   {
+    id: 4,
     name: "Lucky Lobster",
     gameUrl: "",
     description: "",
@@ -35,6 +40,7 @@ export const GameList = [
     tags: [],
   },
   {
+    id: 5,
     name: "Buffalo Gold Rush",
     gameUrl: "",
     description: "",
@@ -42,6 +48,7 @@ export const GameList = [
     tags: [],
   },
   {
+    id: 6,
     name: "Lucky Dynasty",
     gameUrl: "",
     description: "",
@@ -49,6 +56,7 @@ export const GameList = [
     tags: [],
   },
   {
+    id: 7,
     name: "Stargems",
     gameUrl: "",
     description: "",
@@ -56,6 +64,7 @@ export const GameList = [
     tags: [],
   },
   {
+    id: 8,
     name: "Joe Joker Neon Blast",
     gameUrl: "",
     description: "",
@@ -63,6 +72,7 @@ export const GameList = [
     tags: [],
   },
   {
+    id: 9,
     name: "Gate of Cheope",
     gameUrl: "",
     description: "",

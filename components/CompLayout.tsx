@@ -80,15 +80,7 @@ const CompLayout = ({
         </motion.p>
 
         {/* SECTION CONTENT */}
-        <motion.div
-          variants={fadeIn("left", 0.4)}
-          initial="hidden"
-          exit="hidden"
-          whileInView="show"
-          viewport={{ once: true }}
-        >
-          {childElement}
-        </motion.div>
+        {childElement}
       </div>
     </div>
   );

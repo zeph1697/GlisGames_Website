@@ -39,8 +39,8 @@ export default function RootLayout({
             } from-sky-950 via-gray-900 to-black -z-50`}
           />
           {children}
+          <Footer />
         </AnimatePresence>
-        <Footer />
       </body>
     </html>
   );

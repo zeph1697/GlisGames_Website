@@ -63,42 +63,36 @@ export const ServiceCarousels = [
 ];
 
 export const Timeline = [
-  {
-    date: "2021",
-    detail: "",
-  },
-  {
-    date: "2021 - 2022",
-    detail: "",
-  },
-  {
-    date: "2022 - NOW",
-    detail: "",
-  },
+  { index: 0, date: "2021", detail: "" },
+  { index: 1, date: "2021 - 2022", detail: "" },
+  { index: 2, date: "2022 - NOW", detail: "" },
 ];
 
 // SERVICES
 export const ServiceTags = [
   {
+    index: 0,
     title: "CASINO GAMES DEVELOPMENT",
     content:
       "We develop casino games and we provide counseling on design, technologies, distribution, regulations, math modeling, etc. Casino games are a tough matter, let us guide you through.",
     icon: "",
   },
   {
+    index: 1,
     title: "GAMING ADVISORY",
     content:
       "Is you game stuck or you want to start in the gaming industry? We can squeeze the best out of your games and we can save you the headaches that we wish we could have avoided in the past.",
     icon: "",
   },
   {
+    index: 2,
     title: "GAME PUBLISHING BROKERAGE",
     content:
       "Out there is full of greedy game publishers awaiting to eat your game to the bones. We do a relentless bulldozing through all those shark tanks in order to get the best deal for you.",
     icon: "",
   },
-
   {
+    index: 3,
     title: "GROWTH HACKING",
     content:
       "No one have Big Tech's money, but the good news is that we can exploit it to reduce your costs from development to user acquisition, rocket launch your games on a human-affordable budget.",
@@ -109,53 +103,90 @@ export const ServiceTags = [
 // TEAM
 export const TeamConfig = [
   {
-    id: "FOUNDER - CPO",
+    id: 0,
+    title: "BIG GUYS",
     guys: [
-      { name: "Michele Tampellini", position: "", url: "", icon: TbUserDollar },
+      {
+        name: "Michele Tampellini",
+        position: "Founder - CPO",
+        url: "",
+        icon: TbUserDollar,
+      },
     ],
   },
   {
-    id: "PRODUCT OWNER",
-    guys: [{ name: "Cloe Nguyen", position: "", url: "", icon: TbUserSearch }],
-  },
-  {
-    id: "DEVELOPER",
+    id: 1,
+    title: "MULTI-FUNCTION GUYS",
     guys: [
-      { name: "Haozhong Zheng", position: "", url: "", icon: TbUserCode },
-      { name: "Hai Luong", position: "", url: "", icon: TbUserCode },
-      { name: "Chung Pham", position: "", url: "", icon: TbUserCode },
-      { name: "Viet Pham", position: "", url: "", icon: TbUserCode },
-      { name: "Tung Tran", position: "", url: "", icon: TbUserCode },
-      { name: "Viet Anh Ng.", position: "", url: "", icon: TbUserCode },
+      {
+        name: "Cloe Nguyen",
+        position: "Product Owner",
+        url: "",
+        icon: TbUserSearch,
+      },
     ],
   },
   {
-    id: "GRAPHIC DESIGNER",
-    guys: [{ name: "Mai Trieu", position: "", url: "", icon: TbUserEdit }],
+    id: 2,
+    title: "LOWKEY IT GUYS",
+    guys: [
+      {
+        name: "Haozhong Zheng",
+        position: "Developer",
+        url: "",
+        icon: TbUserCode,
+      },
+      { name: "Hai Luong", position: "Developer", url: "", icon: TbUserCode },
+      { name: "Chung Pham", position: "Developer", url: "", icon: TbUserCode },
+      { name: "Viet Pham", position: "Developer", url: "", icon: TbUserCode },
+      { name: "Tung Tran", position: "Developer", url: "", icon: TbUserCode },
+      {
+        name: "Viet Anh Ng.",
+        position: "Developer",
+        url: "",
+        icon: TbUserCode,
+      },
+    ],
+  },
+  {
+    id: 3,
+    title: "MIND-FASHION GUYS",
+    guys: [
+      {
+        name: "Mai Trieu",
+        position: "Graphic Designer",
+        url: "",
+        icon: TbUserEdit,
+      },
+    ],
   },
 ];
 
 // CONTACT
 export const ContactConfig = [
   {
+    index: 0,
     title: "General Inquiries",
     subtitle: "Ask us anything.",
     path: "mich@glisgames.com",
     url: "mailto:mich@glisgames.com",
   },
   {
+    index: 1,
     title: "Partnerships",
     subtitle: "Need engineering help?",
     path: "mich@glisgames.com",
     url: "mailto:mich@glisgames.com",
   },
   {
+    index: 2,
     title: "Career",
     subtitle: "Growth with us!",
     path: "recruit@glisgames.com",
     url: "mailto:recruit@glisgames.com",
   },
   {
+    index: 3,
     title: "Our Office",
     subtitle:
       "3rd Floor, Toong Workspace, Indochina Plaza Hanoi, Cau Giay, Hanoi.",

@@ -32,6 +32,7 @@ const Footer = () => {
         variants={fadeIn("down", 0.4)}
         initial="hidden"
         whileInView="show"
+        viewport={{ once: true }}
         exit="hidden"
         className="flex w-full justify-between"
       >
@@ -49,6 +50,7 @@ const Footer = () => {
         variants={fadeIn("down", 0.6)}
         initial="hidden"
         whileInView="show"
+        viewport={{ once: true }}
         exit="hidden"
         className="flex w-2/3 justify-between"
       >

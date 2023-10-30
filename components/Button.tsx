@@ -1,5 +1,9 @@
+"use client";
+
 import Link from "next/link";
 import React from "react";
+
+import { motion } from "framer-motion";
 
 type BtnType = {
   title: string;
@@ -27,7 +31,7 @@ const Button = ({
   action,
 }: BtnType) => {
   return (
-    <button className="btnPolygon">
+    <motion.button whileTap={{ scale: 0.95 }} className="btnPolygon">
       <Link
         href={`${path ? path : ""}`}
         target={newTab ? "_blank" : "_self"}
@@ -76,7 +80,7 @@ const Button = ({
           {title}
         </span>
       </Link>
-    </button>
+    </motion.button>
   );
 };
 

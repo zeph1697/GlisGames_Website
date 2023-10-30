@@ -98,10 +98,10 @@ body {
 
 .imgPolygonDecor {
   clip-path: polygon(
-    100% calc(100% - 2.05rem),
-    100% calc(100% - 1.95rem),
-    calc(100% - 1.95rem) 100%,
-    calc(100% - 2.05rem) 100%
+    100% calc(100% - 2.1rem),
+    100% calc(100% - 1.9rem),
+    calc(100% - 1.9rem) 100%,
+    calc(100% - 2.1rem) 100%
   );
 }
 

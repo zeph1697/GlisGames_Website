@@ -15,7 +15,7 @@ const Footer = () => {
       whileInView="show"
       viewport={{ once: true }}
       exit="hidden"
-      className="mx-auto mt-12 flex flex-col justify-center items-center px-8 py-6 w-1/2 gap-5 border-t-[1px] border-cyan-400"
+      className="mx-auto mt-12 flex flex-col justify-center items-center px-8 py-6 xl:w-1/2 md:w-4/5 w-[90%] gap-5 border-t-[1px] border-cyan-400"
     >
       <Link
         href=""
@@ -34,12 +34,12 @@ const Footer = () => {
         whileInView="show"
         viewport={{ once: true }}
         exit="hidden"
-        className="flex w-full justify-between"
+        className="flex max-sm:flex-col w-full max-sm:gap-2 justify-between"
       >
         {FooterTerms.map((term) => (
           <li
             key={term.title}
-            className="flex w-full items-center justify-center text-sm text-cyan-400 hover:text-white font-medium tracking-wide cursor-pointer border-r-[1px] border-white/50 last:border-transparent"
+            className="flex w-full items-center justify-center text-center text-sm text-cyan-400 hover:text-white font-medium tracking-wide cursor-pointer border-r-[1px] md:border-white/50 border-transparent last:border-transparent"
           >
             {term.title}
           </li>
@@ -62,8 +62,8 @@ const Footer = () => {
             className="flex items-center gap-2 text-cyan-400 hover:text-white"
           >
             <li className="flex items-center font-extralight group transition-all ease-out">
-              <link.icon className="" />
-              <p className="ml-2 text-sm">{link.name}</p>
+              <link.icon className="md:text-base text-xl" />
+              <p className="md:flex hidden ml-2 text-sm">{link.name}</p>
             </li>
           </a>
         ))}

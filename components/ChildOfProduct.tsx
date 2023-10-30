@@ -10,7 +10,7 @@ import { fadeIn } from "@/constant/motion-config";
 
 const ChildOfProduct = () => {
   return (
-    <ul className="grid grid-cols-2 gap-4">
+    <ul className="grid xl:grid-cols-2 grid-cols-1 gap-8">
       {GameList.map((game) => (
         <motion.li
           key={game.id}
@@ -19,27 +19,28 @@ const ChildOfProduct = () => {
           whileInView="show"
           viewport={{ once: true }}
           exit="hidden"
-          className="relative flex h-48 mb-6 group"
+          className="relative flex h-48 group"
         >
           <ImgComp imgUrl={game.imgUrl} />
 
-          <div className="flex flex-col justify-between w-1/2 ml-5">
+          <div className="flex flex-col justify-between w-1/2 max-sm:w-full ml-5">
             <h3 className="font-bebas tracking-wider text-2xl text-cyan-400 group-hover:text-amber-400 cursor-default">
               {game.name}
             </h3>
 
-            <p className="text-sm text-white/80">
+            <p className="md:text-sm text-xs text-white/80">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint
               corporis ipsum accusantium explicabo. Quia, omnis!
             </p>
 
             <div className="">
               <Button
-                title="Live"
+                title="DEMO PLAY"
                 path={game.gameUrl}
                 hoverBgColor="bg-amber-400"
                 hoverBorderColor="border-amber-400"
                 newTab={true}
+                size="SM"
               />
             </div>
           </div>

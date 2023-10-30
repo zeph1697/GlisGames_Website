@@ -19,7 +19,7 @@ const Decor = ({
     <div className="relative flex items-center">
       <span
         className={`absolute rounded-full border-[1px] ${
-          ringSize ? ringSize : "w-16 h-16"
+          ringSize ? ringSize : "md:w-16 w-12 md:h-16 h-12"
         } ${isAnimate ? "animate-water-drop" : ""} ${
           ringBordColor ? ringBordColor : "border-white"
         } opacity-75 ${

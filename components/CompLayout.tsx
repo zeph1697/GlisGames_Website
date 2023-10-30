@@ -32,7 +32,7 @@ const CompLayout = ({
   childElement,
 }: TypeCustomComp) => {
   return (
-    <div className="grid grid-cols-[10%_90%] w-full h-full mt-32 mb-8 px-16">
+    <div className="grid xl:grid-cols-[10%_90%] grid-cols-[15%_85%] w-full h-full mt-32 mb-8 xl:px-16 md:px-10 px-4 overflow-x-clip">
       <motion.div
         variants={fadeIn("up", 0.3)}
         initial="hidden"
@@ -62,7 +62,7 @@ const CompLayout = ({
           exit="hidden"
           className={`${
             titleColor ? titleColor : "text-amber-400"
-          } text-5xl font-bold cursor-default`}
+          } md:text-5xl text-4xl font-bold cursor-default`}
         >
           {mainTitle}
         </motion.h2>

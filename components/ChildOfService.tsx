@@ -9,7 +9,7 @@ import { fadeIn } from "@/constant/motion-config";
 
 const ChildOfService = () => {
   return (
-    <ul className="grid grid-flow-col w-full h-80 mt-12">
+    <ul className="grid xl:grid-cols-4 md:grid-cols-2 max-xl:gap-y-8  w-full min-h-[320px] h-full mt-12">
       {ServiceTags.map((tag) => (
         <motion.li
           variants={

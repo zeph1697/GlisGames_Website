@@ -4,7 +4,7 @@ export const GameList = [
     name: "Imperium",
     gameUrl: "https://www.glisgames.com/SISAL/Imperium/latest/",
     description: "",
-    imgUrl: "",
+    imgUrl: "/game_imperium.png",
     tags: [],
   },
   {
@@ -12,7 +12,7 @@ export const GameList = [
     name: "Power Bell",
     gameUrl: "https://www.glisgames.com/SISAL/Powerbell/latest/",
     description: "",
-    imgUrl: "",
+    imgUrl: "/game_power-bell.png",
     tags: [],
   },
   {
@@ -20,7 +20,7 @@ export const GameList = [
     name: "NasdaX",
     gameUrl: "https://www.glisgames.com/SISAL/NasdaX/dist/",
     description: "",
-    imgUrl: "",
+    imgUrl: "/game_nasdax.png",
     tags: [],
   },
   {
@@ -28,7 +28,7 @@ export const GameList = [
     name: "Joe Joker Pirate Riches",
     gameUrl: "https://www.glisgames.com/SISAL/JJPirateRiches/latest/",
     description: "",
-    imgUrl: "",
+    imgUrl: "/game_jjpr.png",
     tags: [],
   },
   {
@@ -36,7 +36,7 @@ export const GameList = [
     name: "Lucky Lobster",
     gameUrl: "https://www.glisgames.com/SISAL/LuckyLobster/dist/",
     description: "",
-    imgUrl: "",
+    imgUrl: "/game_lucky-lobster.png",
     tags: [],
   },
   {
@@ -44,7 +44,7 @@ export const GameList = [
     name: "Buffalo Gold Rush",
     gameUrl: "https://www.glisgames.com/SISAL/BuffaloGoldRush/dist/",
     description: "",
-    imgUrl: "",
+    imgUrl: "/game_bgr.png",
     tags: [],
   },
   {
@@ -52,7 +52,7 @@ export const GameList = [
     name: "Lucky Dynasty",
     gameUrl: "https://www.glisgames.com/SISAL/LuckyDynasty/dist/",
     description: "",
-    imgUrl: "",
+    imgUrl: "/game_lucky-dynasty.png",
     tags: [],
   },
   {
@@ -60,7 +60,7 @@ export const GameList = [
     name: "Stargems",
     gameUrl: "https://www.glisgames.com/SISAL/Stargems/latest/",
     description: "",
-    imgUrl: "",
+    imgUrl: "/game_star-gems.png",
     tags: [],
   },
   {
@@ -68,7 +68,7 @@ export const GameList = [
     name: "Joe Joker Neon Blast",
     gameUrl: "https://www.glisgames.com/SISAL/NeonJokerBlast/latest/",
     description: "",
-    imgUrl: "",
+    imgUrl: "/game_jjnb.png",
     tags: [],
   },
   {
@@ -76,7 +76,7 @@ export const GameList = [
     name: "Gate of Cheope",
     gameUrl: "https://www.glisgames.com/SISAL/GOC/STANDALONE/",
     description: "",
-    imgUrl: "",
+    imgUrl: "/game_goc.png",
     tags: [],
   },
 ];

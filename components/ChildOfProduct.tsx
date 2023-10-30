@@ -21,7 +21,7 @@ const ChildOfProduct = () => {
           exit="hidden"
           className="relative flex h-48 mb-6 group"
         >
-          <ImgComp imgUrl="/imgLogo.png" />
+          <ImgComp imgUrl={game.imgUrl} />
 
           <div className="flex flex-col justify-between w-1/2 ml-5">
             <h3 className="font-bebas tracking-wider text-2xl text-cyan-400 group-hover:text-amber-400 cursor-default">

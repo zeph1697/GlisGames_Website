@@ -119,7 +119,7 @@ export const TeamConfig = [
     title: "MULTI-FUNCTION GUYS",
     guys: [
       {
-        name: "Cloe Nguyen",
+        name: "Chloe Nguyen",
         position: "Product Owner",
         url: "",
         icon: TbUserSearch,

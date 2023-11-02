@@ -50,7 +50,11 @@ const NavBar = () => {
         </Link>
 
         {(!isSmallScr || toggleNav) && (
-          <ul className="flex items-center text-base xl:gap-1 md:gap-0.5 max-sm:absolute max-sm:w-48 max-sm:flex-col max-sm:gap-4 max-sm:left-4.5 max-sm:top-7 max-sm:bg-black/75 max-sm:backdrop-blur-sm max-sm:px-2 max-sm:pt-14 max-sm:pb-4 max-sm:border-2 max-sm:border-cyan-400 max-sm:rounded max-sm:-z-10">
+          <ul
+            className={`flex items-center text-base xl:gap-1 md:gap-0.5 max-sm:absolute max-sm:w-48 max-sm:flex-col max-sm:gap-4 max-sm:left-4.5 ${
+              !scrollTop ? "max-sm:top-[9px]" : "max-sm:top-[25px]"
+            } max-sm:bg-black/75 max-sm:backdrop-blur-sm max-sm:px-2 max-sm:pt-14 max-sm:pb-4 max-sm:border-2 max-sm:border-cyan-400 max-sm:rounded max-sm:-z-10 transition-all ease-out`}
+          >
             {NavLinks.map((link) => (
               <Link
                 key={link.name}

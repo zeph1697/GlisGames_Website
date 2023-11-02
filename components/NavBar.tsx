@@ -33,14 +33,15 @@ const NavBar = () => {
 
   return (
     <nav
-      className={`fixed flex justify-between items-center xl:px-8 md:px-6 px-4 w-full z-40 transition-all ease-out ${
+      className={`fixed flex justify-between items-center xl:px-8 px-6 w-full z-40 transition-all ease-out ${
         scrollTop ? "bg-transparent h-24" : "bg-subBgColor h-16"
       }`}
     >
       <div className="flex max-sm:flex-col items-center xl:gap-10 md:gap-6">
         <Link
-          href="/"
-          className="px-2 text-4xl text-white hover:text-sky-800 hover:bg-white rounded-sm outline outline-2 outline-transparent hover:outline-white border-spacing-4 border-[1px] border-white hover:border-sky-800 font-bold cursor-pointer"
+          href={isSmallScr ? "" : "/"}
+          scroll={isSmallScr ? false : true}
+          className="px-2 md:text-4xl text-3xl text-white hover:text-sky-800 hover:bg-white rounded-sm outline outline-2 outline-transparent hover:outline-white border-spacing-4 border-[1px] border-white hover:border-sky-800 font-bold cursor-pointer"
           onClick={() => {
             setToggleNav(!toggleNav);
           }}

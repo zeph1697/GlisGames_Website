@@ -5,10 +5,11 @@ import React from "react";
 
 import { motion } from "framer-motion";
 import { fadeIn } from "@/constant/motion-config";
+import { TbExternalLink } from "react-icons/tb";
 
 const ChildOfContact = () => {
   return (
-    <ul className="flex justify-between mt-20">
+    <ul className="flex flex-wrap gap-12 justify-between mt-20">
       {ContactConfig.map((cta) => (
         <motion.li
           key={cta.index}
@@ -23,9 +24,10 @@ const ChildOfContact = () => {
           <a
             href={cta.url}
             target="_blank"
-            className="text-lg hover:text-amber-400"
+            className="flex items-center gap-2 text-lg hover:text-amber-400"
           >
             {cta.path}
+            {cta.path && <TbExternalLink />}
           </a>
         </motion.li>
       ))}

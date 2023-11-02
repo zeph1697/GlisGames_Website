@@ -16,7 +16,7 @@ const ChildOfTeam = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="absolute -left-8 top-1/2 w-0 h-0 border-t-[5px] border-t-transparent border-l-[8px] border-l-amber-500 border-b-[5px] border-b-transparent"
+            className="absolute md:-left-8 -left-5 top-1/2 w-0 h-0 border-t-[5px] border-t-transparent border-l-[8px] border-l-amber-500 border-b-[5px] border-b-transparent"
           ></motion.span>
 
           <motion.h3
@@ -33,7 +33,7 @@ const ChildOfTeam = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="imgPolygon w-full bg-gradient-to-r from-sky-900 via-sky-800 to-transparent grid grid-cols-4 gap-8 justify-between pt-6 pb-4 px-12"
+            className="imgPolygon w-full bg-gradient-to-r from-sky-900 via-sky-800 to-transparent grid xl:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-y-8 justify-between pt-6 pb-4 px-12"
           >
             {emp.guys.map((guy) => (
               <div key={guy.name} className="grid grid-cols-[35%_65%] group">

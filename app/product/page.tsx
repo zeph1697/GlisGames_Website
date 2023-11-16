@@ -19,7 +19,7 @@ const Product = () => {
       <CompLayout
         mainTitle="Our Games"
         subTitle="What we do"
-        content="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi eveniet quaerat iure eos placeat quisquam in. Hic placeat odit dolores laudantium! Distinctio modi atque ipsa voluptates, fuga sed eaque cumque!"
+        content="Discover our latest releases, don't miss any of our games. Your next favorite is already here!"
         childElement={<ChildOfProduct />}
       />
     </section>

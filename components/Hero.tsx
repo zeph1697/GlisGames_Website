@@ -46,7 +46,7 @@ const Hero = () => {
             } md:text-7xl text-5xl text-center font-bold xl:my-6 my-8 cursor-default`}
             content="LET'S DISCOVER"
           >
-            {mainBtnHover ? "LET'S DISCOVER" : "HERE'S THE BIG TITLE"}
+            {mainBtnHover ? "LET'S DISCOVER" : "FORGING MOUSE-TERPIECES"}
           </motion.h1>
 
           <motion.p
@@ -56,7 +56,8 @@ const Hero = () => {
             exit="hidden"
             className="text-cyan-400 text-sm font-light"
           >
-            Some joeking arounds in here
+            Not just gaming, we're 'rodent'-ing the way to entertainment
+            greatness!
           </motion.p>
 
           <motion.div

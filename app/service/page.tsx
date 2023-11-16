@@ -18,7 +18,7 @@ const Service = () => {
       <CompLayout
         mainTitle="Services"
         subTitle="What can we offer"
-        content="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi eveniet quaerat iure eos placeat quisquam in. Hic placeat odit dolores laudantium! Distinctio modi atque ipsa voluptates, fuga sed eaque cumque!"
+        content="Blazing solution for your game!"
         childElement={<ChildOfService />}
       />
     </section>

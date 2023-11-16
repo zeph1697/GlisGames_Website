@@ -29,8 +29,7 @@ const ChildOfProduct = () => {
             </h3>
 
             <p className="md:text-sm text-xs text-white/80">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint
-              corporis ipsum accusantium explicabo. Quia, omnis!
+              {game.description}
             </p>
 
             <div className="">

@@ -73,8 +73,8 @@ const CompLayout = ({
           viewport={{ once: true }}
           exit="hidden"
           className={`${
-            contentColor ? contentColor : "text-sky-800"
-          } font-medium text-justify`}
+            contentColor ? contentColor : "text-cyan-600"
+          } font-medium text-base text-justify`}
         >
           {content}
         </motion.p>

@@ -14,7 +14,7 @@ export const NavLinks = [
   { name: "Home", path: "/" },
   { name: "Services", path: "/service" },
   { name: "Games", path: "/product" },
-  { name: "Team", path: "/team" },
+  // { name: "Team", path: "/team" },
 ];
 
 // FOOTER
@@ -63,9 +63,27 @@ export const ServiceCarousels = [
 ];
 
 export const Timeline = [
-  { index: 0, date: "2021", detail: "" },
-  { index: 1, date: "2021 - 2022", detail: "" },
-  { index: 2, date: "2022 - NOW", detail: "" },
+  {
+    index: 0,
+    date: "2021",
+    note: "Humble Beginnings",
+    detail:
+      "Our journey began in 2021 with a small, passionate team. Embracing our dormouse identity, we set out to create standout games that would thrive in the ever-evolving gaming landscape.",
+  },
+  {
+    index: 1,
+    date: "2021 - 2022",
+    note: "Steady Progress",
+    detail:
+      "As Glis Games evolved, so did our impact. Our team expanded, and our games garnered global attention. Navigating industry shifts, we adapted swiftly to emerging trends, establishing ourselves as a formidable player in the gaming ecosystem.",
+  },
+  {
+    index: 2,
+    date: "2023 - NOW",
+    note: "Thriving in",
+    detail:
+      "In 2023, Glis Games has grown into a gaming powerhouse, boasting over 20 captivating games under Glis's IP. Beyond our creations, we've delivered 30+ games for clients globally, spanning Asia, Europe, and North America. Our legacy is one of creativity, resilience, and success in a competitive gaming world.",
+  },
 ];
 
 // SERVICES

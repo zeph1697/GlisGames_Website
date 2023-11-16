@@ -20,7 +20,7 @@ export default function Home() {
       <CompLayout
         mainTitle="About Us"
         subTitle="Why we're here"
-        content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam necessitatibus voluptates, hic impedit voluptas doloremque rerum eius itaque nemo, exercitationem eos, illum unde neque esse quo eum cum accusantium aliquam mollitia odit aspernatur officiis commodi debitis quisquam? Quasi corporis assumenda distinctio dolor cumque iure laudantium voluptas expedita ullam, harum consectetur. Mollitia placeat culpa quos amet vel eum quisquam. Eos, quos."
+        content="In the vast landscape of the gaming industry, where mighty dinosaurs roam, there emerged a small yet resilient creature called Glis. Much like the chubby dormouse it was named after, Glis Games scurried into existence among the giants of the gaming world."
         childElement={<ChildOfLanding />}
       />
     </main>

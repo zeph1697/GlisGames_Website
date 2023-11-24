@@ -24,22 +24,24 @@ export default function RootLayout({
       >
         <NavBar />
         <AnimatePresence mode="wait" key={path}>
-          <PageSwap />
-          <span
-            className={`fixed w-full h-full ${
-              path === "/" || path === ""
-                ? "bg-gradient-to-tl"
-                : path === "/service"
-                ? "bg-gradient-to-tr"
-                : path === "/product"
-                ? "bg-gradient-to-br"
-                : path === "/contact"
-                ? "bg-gradient-to-b"
-                : "bg-gradient-to-bl"
-            } from-sky-950 via-gray-900 to-black -z-50`}
-          />
-          {children}
-          <Footer />
+          <motion.div key={path}>
+            <PageSwap />
+            <span
+              className={`fixed w-full h-full ${
+                path === "/" || path === ""
+                  ? "bg-gradient-to-tl"
+                  : path === "/service"
+                  ? "bg-gradient-to-tr"
+                  : path === "/product"
+                  ? "bg-gradient-to-br"
+                  : path === "/contact"
+                  ? "bg-gradient-to-b"
+                  : "bg-gradient-to-bl"
+              } from-sky-950 via-gray-900 to-black -z-50`}
+            />
+            {children}
+            <Footer />
+          </motion.div>
         </AnimatePresence>
       </body>
     </html>

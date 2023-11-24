@@ -22,6 +22,7 @@ const PageSwap = () => {
   return (
     <>
       <motion.div
+        key={"swap-1"}
         className="fixed top-0 bottom-0 right-full w-screen h-screen bg-black/25 backdrop-blur-sm z-50"
         variants={transitionVariants}
         initial="initial"
@@ -30,6 +31,7 @@ const PageSwap = () => {
         transition={{ delay: 0.4, duration: 0.6, ease: "easeOut" }}
       />
       <motion.div
+        key={"swap-2"}
         className="fixed flex flex-col items-center justify-center top-0 bottom-0 right-full w-screen h-screen bg-black/25 backdrop-blur-sm z-50"
         variants={transitionVariants}
         initial="initial"

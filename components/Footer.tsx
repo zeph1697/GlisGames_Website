@@ -10,6 +10,7 @@ import { fadeIn } from "@/constant/motion-config";
 const Footer = () => {
   return (
     <motion.footer
+      key={"footer"}
       variants={fadeIn("down", 0.2)}
       initial="hidden"
       whileInView="show"
@@ -29,6 +30,7 @@ const Footer = () => {
       </Link>
 
       <motion.ul
+        key={"footer-1"}
         variants={fadeIn("down", 0.4)}
         initial="hidden"
         whileInView="show"
@@ -47,6 +49,7 @@ const Footer = () => {
       </motion.ul>
 
       <motion.ul
+        key={"footer-2"}
         variants={fadeIn("down", 0.6)}
         initial="hidden"
         whileInView="show"

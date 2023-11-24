@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import Button from "./Button";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import Decor from "./Decor";
 import { ServiceCarousels } from "@/constant/general-config";
 

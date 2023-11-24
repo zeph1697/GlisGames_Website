@@ -40,7 +40,7 @@ const Button = ({
         } overflow-hidden transition-all ${
           mainBgColor ? mainBgColor : "bg-white"
         }  group`}
-      >
+        legacyBehavior>
         <span
           className={`absolute top-0 left-0 w-0 h-0 transition-all duration-200 border-t-2 ${
             hoverBorderColor ? hoverBorderColor : "border-sky-800"

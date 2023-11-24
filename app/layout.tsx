@@ -24,7 +24,7 @@ export default function RootLayout({
       >
         <NavBar />
         <AnimatePresence mode="wait" key={path}>
-          <motion.div key={path}>
+          <motion.div>
             <PageSwap />
             <span
               className={`fixed w-full h-full ${

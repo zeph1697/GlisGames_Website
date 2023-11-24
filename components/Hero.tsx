@@ -127,10 +127,9 @@ const Hero = () => {
               <div className="imgPolygon w-full h-full">
                 <Image
                   src={object.imgUrl}
-                  width={640}
-                  height={360}
                   alt="cover"
-                  className="absolute max-w-full h-full object-cover -z-10"
+                  layout="fill"
+                  className="absolute object-cover -z-10"
                 />
                 <div className="absolute w-full h-full bg-black/50 backdrop-blur-[2px] -z-10 hidden group-hover:block "></div>
               </div>

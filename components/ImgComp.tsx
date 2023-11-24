@@ -14,10 +14,9 @@ const ImgComp = ({ imgUrl, content }: TypeOfImgComp) => {
       <div className="imgPolygon w-full h-full">
         <Image
           src={imgUrl}
-          width={1920}
-          height={1080}
           alt="cover"
-          className="absolute w-full h-full object-cover -z-10"
+          layout="fill"
+          className="absolute object-cover -z-10"
         />
         <div className="absolute w-full h-full bg-gradient-to-t from-black/50 to-black/5 backdrop-blur-[2px] -z-10 hidden group-hover:block"></div>
       </div>

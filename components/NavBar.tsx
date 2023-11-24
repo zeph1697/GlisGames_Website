@@ -45,7 +45,7 @@ const NavBar = () => {
           onClick={() => {
             setToggleNav(!toggleNav);
           }}
-          legacyBehavior>
+        >
           {isSmallScr ? (toggleNav ? "Glis Games" : "GG") : "Glis Games"}
         </Link>
 
@@ -67,14 +67,16 @@ const NavBar = () => {
                 onClick={() => {
                   setToggleNav(!toggleNav);
                 }}
-                legacyBehavior>
-                <span
-                  className={`absolute labelPolygon w-full h-full rounded top-0 left-0 bg-white -z-10 ${
-                    link.path === pathName ? "block" : "hidden"
-                  }`}
-                ></span>
-                <span className="absolute labelPolygonDecor w-full h-full top-0 left-0 bg-amber-400 hidden group-hover:block"></span>
-                <li className="font-medium">{link.name.toUpperCase()}</li>
+              >
+                <li>
+                  <span
+                    className={`absolute labelPolygon w-full h-full rounded top-0 left-0 bg-white -z-10 ${
+                      link.path === pathName ? "block" : "hidden"
+                    }`}
+                  ></span>
+                  <span className="absolute labelPolygonDecor w-full h-full top-0 left-0 bg-amber-400 hidden group-hover:block"></span>
+                  <p className="font-medium">{link.name.toUpperCase()}</p>
+                </li>
               </Link>
             ))}
           </ul>

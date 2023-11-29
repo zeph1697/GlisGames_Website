@@ -54,7 +54,7 @@ const Hero = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="text-cyan-400 text-sm font-light"
+            className="text-cyan-400 text-sm font-light text-center"
           >
             Not just gaming, we're 'rodent'-ing the way to entertainment
             greatness!

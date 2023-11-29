@@ -13,7 +13,7 @@ const ChildOfLanding = () => {
       {Timeline.map((node) => (
         <li
           key={node.date}
-          className="relative grid xl:grid-cols-[50%_40%] md:grid-cols-[40%_50%] grid-cols-1 gap-[10%] w-full h-40"
+          className="relative grid xl:grid-cols-[50%_40%] md:grid-cols-[40%_50%] grid-cols-1 gap-[10%] w-full xl:h-40 md:h-60 h-80"
         >
           <motion.span
             variants={fadeIn("right", 0.3 * node.index)}
